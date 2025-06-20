@@ -1,44 +1,33 @@
-# マージコンフリクトを回避する
-
-_マージコンフリクトを回避する方法を*VSCode*を用いて学びます。_
-
-## 概要
-
-マージコンフリクトは起きうるものですが、場合によっては避けることが可能です。
-このコースではマージリクエストを回避する一連の流れをGitHubとVSCodeを用いて学びます。
-
-- 学習内容：VSCodeを利用したマージコンフリクトの回避方法について。
-- 作成するもの: マークダウンで書かれた要約ファイル`resume.md`を使用します。
-- 前提条件：[resolve-merge-conflict-with-vscode](https://github.com/kuboctopus/resolve-merge-conflict-with-vscode)の内容を理解していることをお勧めします
-- 所用時間: このコースの所要時間は 30 分未満です。
-
-このコースではVSCodeを利用して以下を学びます:
-
-1. コードを個人端末に複製、修正、プッシュする
-2. プルリクエストを作成する
-3. プルリクエストをマージする
-
-> [!NOTE]
-> Git、GitHub初学者は[こちら](https://github.com/kuboctopus/dodge-merge-conflict/blob/main/for_newbie.md)へ
 
 
-## このコースの始め方
-
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'kuboctopus',
-  template_name: 'dodge-merge-conflict',
-  owner: '@me',
-  name: 'my-resume',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
+<!--
+  <<< Author notes: Step 1 >>>
+  Choose 3-5 steps for your course.
+  The first step is always the hardest, so pick something easy!
+  Link to docs.github.com for further explanations.
+  Encourage users to open new tabs for steps!
 -->
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=kuboctopus&template_name=dodge-merge-conflict&owner=%40me&name=my-resume&description=My+clone+repository&visibility=public)
 
-1. **Start cource**を**右クリック**し、新しいタブでリンクを開きます。
-2. 新しいタブでリポジトリを作成します。
-   - 個人下にリポジトリを作成してください(組織下に作成すると課金される可能性があるため)
-   - リポジトリの公開設定はパブリックにしてください(プライベートだとGitHub Actionsで課金されます)
-3. 新しいリポジトリが作成されて20秒後にページを更新してください。ステップごとの説明がREADMEに表示されます。
+## Step 1: プルリクエストの作成
+
+_ようこそ "マージコンフリクトを回避する方法へ"! :wave:_
+
+**_マージコンフリクトって何_?**: **マージコンフリクト** は、2つの異なるブランチで同じファイルの同じ箇所が修正されている場合に発生します。
+<!-- 通常、プルリクエストで競合について調査しますので、先ずはプルリクエストを作成するところから始めましょう。 -->
+
+### :keyboard: Activity: プルリクエストの作成
+
+1. 新しいブラウザタブを開き、このタブで指示を読みながら、もう一方のタブで手順を進めてください。
+1. リポジトリの main ブランチにあるファイルに、小さな変更を加えました。
+1. main をベースブランチ、my-resume をヘッドブランチとして設定して、[プルリクエスト](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)を実行してください。プルリクエストのタイトルと本文には Resolving merge conflicts と入力してください。
+1. 約20秒待ってから、このページ(指示に従っているページ)をリフレッシュしてください。バックグラウンドで[GitHub Actions](https://docs.github.com/en/actions)が動作し、次のステップに自動的に更新されます。
+
+
+<!-- 元テキスト
+1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
+1. We made a small change to a file in the repository in the `my-resume` branch.
+1. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) setting `my-resume` as the head branch and `main` as the base branch. You can enter `Resolving merge conflicts` for the pull request title and body.
+1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step. -->
+
+
